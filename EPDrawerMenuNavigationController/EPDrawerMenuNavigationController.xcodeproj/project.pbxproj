@@ -21,6 +21,8 @@
 		8969E852181847AC004B705D /* EPDrawerMenuNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8969E851181847AC004B705D /* EPDrawerMenuNavigationControllerTests.m */; };
 		8969E85C18184A1C004B705D /* EPDrawerMenuNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8969E85B18184A1C004B705D /* EPDrawerMenuNavigationController.storyboard */; };
 		8969E86018184B5C004B705D /* EPDrawerMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8969E85F18184B5C004B705D /* EPDrawerMenuNavigationController.m */; };
+		8969E8641818CE36004B705D /* button_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 8969E8621818CE36004B705D /* button_nav.png */; };
+		8969E8651818CE36004B705D /* button_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8969E8631818CE36004B705D /* button_nav@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8969E85B18184A1C004B705D /* EPDrawerMenuNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EPDrawerMenuNavigationController.storyboard; sourceTree = "<group>"; };
 		8969E85E18184B5C004B705D /* EPDrawerMenuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPDrawerMenuNavigationController.h; sourceTree = "<group>"; };
 		8969E85F18184B5C004B705D /* EPDrawerMenuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPDrawerMenuNavigationController.m; sourceTree = "<group>"; };
+		8969E8621818CE36004B705D /* button_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_nav.png; sourceTree = "<group>"; };
+		8969E8631818CE36004B705D /* button_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_nav@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				8969E83B181847AC004B705D /* EPAppDelegate.h */,
 				8969E83C181847AC004B705D /* EPAppDelegate.m */,
 				8969E85B18184A1C004B705D /* EPDrawerMenuNavigationController.storyboard */,
+				8969E8611818CE0A004B705D /* Graphics */,
 				8969E85D18184AEA004B705D /* EPDrawerMenuNavigationController */,
 				8969E83E181847AC004B705D /* Images.xcassets */,
 				8969E833181847AC004B705D /* Supporting Files */,
@@ -158,6 +163,15 @@
 				8969E85F18184B5C004B705D /* EPDrawerMenuNavigationController.m */,
 			);
 			path = EPDrawerMenuNavigationController;
+			sourceTree = "<group>";
+		};
+		8969E8611818CE0A004B705D /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				8969E8621818CE36004B705D /* button_nav.png */,
+				8969E8631818CE36004B705D /* button_nav@2x.png */,
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +251,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8969E837181847AC004B705D /* InfoPlist.strings in Resources */,
+				8969E8651818CE36004B705D /* button_nav@2x.png in Resources */,
+				8969E8641818CE36004B705D /* button_nav.png in Resources */,
 				8969E85C18184A1C004B705D /* EPDrawerMenuNavigationController.storyboard in Resources */,
 				8969E83F181847AC004B705D /* Images.xcassets in Resources */,
 			);

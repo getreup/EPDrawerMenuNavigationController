@@ -179,6 +179,7 @@
 // EPDrawerMenuNavigationController
 @interface EPDrawerMenuNavigationController () <DrawerViewProtocol, UINavigationControllerDelegate>
 @property(strong, nonatomic) EPDrawerView* drawerView;
+@property(strong, nonatomic) UIBarButtonItem* openDrawerBarButton;
 @end
 
 @implementation EPDrawerMenuNavigationController
@@ -194,6 +195,13 @@
     self.drawerView.delegate = self;
 }
 
+#pragma mark Utilities
+
+-(void)toggleDrawer
+{
+    self.drawerView.isShown ^= YES;
+}
+
 -(void)addDrawerToViewController:(UIViewController*)viewController
 {
     if( viewController )
@@ -202,6 +210,17 @@
         [viewController.view addSubview:self.drawerView];
     }
     self.drawerView.isShown = NO;
+}
+
+#pragma mark Properties
+
+-(UIBarButtonItem *)openDrawerBarButton
+{
+    if( !_openDrawerBarButton )
+    {
+        _openDrawerBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"button_nav.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(toggleDrawer)];
+    }
+    return _openDrawerBarButton;
 }
 
 -(id<UINavigationControllerDelegate>)delegate
@@ -220,6 +239,10 @@
 -(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     [self addDrawerToViewController:viewController];
+    if( viewController == navigationController.viewControllers[0] )
+    {
+        viewController.navigationItem.leftBarButtonItem = self.openDrawerBarButton;
+    }
 }
 
 @end
