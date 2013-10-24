@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2p0-xz-Gyj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - First VC-->
+        <scene sceneID="5aA-aB-GJT">
+            <objects>
+                <viewController title="First VC" id="8Vk-wV-Uqr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y9p-LH-98W"/>
+                        <viewControllerLayoutGuide type="bottom" id="JFf-WO-c8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OTl-ov-zqp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsy-zg-zmd">
+                                <rect key="frame" x="144" y="289" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oAV-y5-l8N" kind="push" id="qMd-um-m0n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2zL-BM-Adu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mmz-sm-wZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389" y="-358"/>
+        </scene>
+        <!--View Controller - Second VC-->
+        <scene sceneID="OPR-oH-XNH">
+            <objects>
+                <viewController title="Second VC" id="oAV-y5-l8N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lda-Lo-bJ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="vWV-Xg-MlC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DdA-Cw-KZX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="caB-eW-nci"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HpN-fw-ffN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="-358"/>
+        </scene>
+        <!--Drawer Menu Navigation Controller-->
+        <scene sceneID="qjr-AL-zFk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2p0-xz-Gyj" customClass="EPDrawerMenuNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uK2-ah-G7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Vk-wV-Uqr" kind="relationship" relationship="rootViewController" id="ySA-Ua-tie"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXe-zK-bgZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137" y="-358"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
