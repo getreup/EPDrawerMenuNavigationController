@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2zL-BM-Adu"/>
+                    <navigationItem key="navigationItem" title="First VC" id="2zL-BM-Adu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mmz-sm-wZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="caB-eW-nci"/>
+                    <navigationItem key="navigationItem" title="Second VC" id="caB-eW-nci"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpN-fw-ffN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
