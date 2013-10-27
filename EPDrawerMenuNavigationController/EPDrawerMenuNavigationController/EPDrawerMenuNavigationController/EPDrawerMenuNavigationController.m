@@ -209,7 +209,7 @@
         self.drawerView.frame = viewController.view.bounds;
         [viewController.view addSubview:self.drawerView];
     }
-    self.drawerView.isShown = NO;
+    [self.drawerView setIsShown:NO animated:NO];
 }
 
 #pragma mark Properties
